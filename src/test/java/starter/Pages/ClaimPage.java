@@ -2,10 +2,9 @@ package starter.Pages;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import starter.startBrowser.RunDriver;
+import starter.startBrowser.Baseclass;
 
-public class ClaimPage {
-    RunDriver rundriver = new RunDriver();
+public class ClaimPage extends Baseclass {
 
     @When("I click on Claim")
     public void i_click_on_claim() {
