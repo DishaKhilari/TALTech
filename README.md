@@ -173,3 +173,35 @@ You use the environment system property to determine which environment to run ag
 
     $ mvn clean verify -Denvironment=staging
 
+You can see the Screenshot of Testcase Results saved in:
+
+    src
+        + main
+        + test
+            + java                        Test runners and supporting code
+            + resources
+                + features                  
+                    + search                  
+                        + OutputFile                Output files
+                            + passedresult.png           < Scenario 1
+                            + Result.png                 < Scenario 2
+
+To Save Result in cucumber report:
+
+when execution is done look for link in the bottom of your console result:
+
+    This report will self-destruct in 24h.                                   
+    Keep reports forever: https://reports.cucumber.io/profile
+
+Click on that link login to save the result in Collection
+
+    Publish reports to this collection by defining an environment variable before running Cucumber:
+        CUCUMBER_PUBLISH_TOKEN=ee30fd9a-42ad-44f9-b4a8-005bb09fe3b2
+
+    Please follow instructions about how to define environment variables.
+
+Add this token in your 'Edit Run/Debug configurations' > in environment variable
+        
+    CUCUMBER_PUBLISH_TOKEN= <your cucumber token>
+
+Run your project and you can see all result save in your collection
