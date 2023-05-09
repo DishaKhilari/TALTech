@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Search by keyword" skipped="0" tests="1" time="7.38" timestamp="2023-04-30 01:03:46"><testcase name="Searching for a term"><error message="Unable to locate element: #firstHeading&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.1', revision: '8ebccac989'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '11.0.18'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [64511c33-4d18-4ea6-b4cf-01069f1b0fce, findElement {using=css selector, value=#firstHeading}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, goog:chromeOptions: {args: [remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking]}, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:47838, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 99255, moz:profile: /var/folders/z9/c02m9m691ns..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:47838/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 64511c33-4d18-4ea6-b4cf-01069f1b0fce" type="org.openqa.selenium.NoSuchElementException">Unable to locate element: #firstHeading
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [64511c33-4d18-4ea6-b4cf-01069f1b0fce, findElement {using=css selector, value=#firstHeading}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, goog:chromeOptions: {args: [remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking]}, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:47838, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 99255, moz:profile: /var/folders/z9/c02m9m691ns..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:47838/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64511c33-4d18-4ea6-b4cf-01069f1b0fce</error><system-err>Unable to locate element: #firstHeading
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [64511c33-4d18-4ea6-b4cf-01069f1b0fce, findElement {using=css selector, value=#firstHeading}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, goog:chromeOptions: {args: [remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking]}, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:47838, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 99255, moz:profile: /var/folders/z9/c02m9m691ns..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:47838/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 64511c33-4d18-4ea6-b4cf-01069f1b0fce
+starter.stepdefinitions.SearchStepDefinitions.should_see_information_about(SearchStepDefinitions.java:32)
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+io.cucumber.java.Invoker.invoke(Invoker.java:24)
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)
+</system-err></testcase></testsuite>

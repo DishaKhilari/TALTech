@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: starter.CucumberTestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.26 s <<< FAILURE! - in starter.CucumberTestSuite
+Search by keyword.Searching for a term  Time elapsed: 1.611 s  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: 
+WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver
+WebDriver reported the following message: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary 
+Host info: host: 'Dishalis-MacBook-Air.local', ip: 'fda0:b8b8:a6c8:f089:cf1:14aa:f9fb:c9cb%en0'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}}]
+See below for more details.
+Caused by: org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary 
+Host info: host: 'Dishalis-MacBook-Air.local', ip: 'fda0:b8b8:a6c8:f089:cf1:14aa:f9fb:c9cb%en0'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, --window-size=1000,800, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, --headless=chrome, --headless], extensions: []}}}]
+

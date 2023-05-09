@@ -1,0 +1,8 @@
+starter/navigation/NavigateTo.class
+starter/CucumberTestSuite.class
+starter/navigation/WikipediaHomePage.class
+starter/search/LookForInformation.class
+starter/search/SearchForm.class
+starter/stepdefinitions/ParameterDefinitions.class
+starter/search/WikipediaArticle.class
+starter/stepdefinitions/SearchStepDefinitions.class
