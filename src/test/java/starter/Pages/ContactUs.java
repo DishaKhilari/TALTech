@@ -2,6 +2,7 @@ package starter.Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import starter.startBrowser.Baseclass;
 
 import static org.openqa.selenium.By.cssSelector;
@@ -16,9 +17,17 @@ public class ContactUs extends Baseclass {
 
     public void selectOptionAs(String label) throws InterruptedException {
 
-        waitForElementToBeClickable(driver, id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_5__Value"), 10000);
-        WebElement enquiry = driver.findElement(id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_5__Value"));
-        enquiry.click();
+        // Create Select object for dropdown
+        waitForElementToBeClickable(driver, id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_8dee4338-2a2e-4146-b76d-12124eb15744__Value"), 10000);
+        WebElement enquiry = driver.findElement(id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_8dee4338-2a2e-4146-b76d-12124eb15744__Value"));
+        Select dropdown = new Select(enquiry);
+        // Get the selected option from the dropdown
+        WebElement selectedOption = dropdown.getFirstSelectedOption();
+        // Get the text of the selected option
+        String selectedValue = selectedOption.getText();
+        System.out.println("Selected value from dropdown: " + selectedValue);
+        selectedOption.click();
+
         Thread.sleep(3000);
         enquiry.findElement(By.xpath("//option[. = '"+label+"']")).click();
     }
