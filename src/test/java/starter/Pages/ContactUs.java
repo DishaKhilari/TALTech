@@ -36,26 +36,26 @@ public class ContactUs extends Baseclass {
 
         Thread.sleep(3000);
 
-        waitForElementToBeClickable(driver, id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_0__Value"), 10000);
-        WebElement eleName = driver.findElement(id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_0__Value"));
+        waitForElementToBeClickable(driver, id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_391c9fe0-48c1-4970-8b10-dfa8fd56a41b__Value"), 10000);
+        WebElement eleName = driver.findElement(id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_391c9fe0-48c1-4970-8b10-dfa8fd56a41b__Value"));
         eleName.click();
         eleName.clear();
         eleName.sendKeys(name);
 
-        waitForElementToBeClickable(driver, id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_1__Value"), 10000);
-        WebElement eleEmail = driver.findElement(id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_1__Value"));
+        waitForElementToBeClickable(driver, id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_04c2d8b3-2f1e-44a3-82d1-10ede5ad9ff2__Value"), 10000);
+        WebElement eleEmail = driver.findElement(id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_04c2d8b3-2f1e-44a3-82d1-10ede5ad9ff2__Value"));
         eleEmail.click();
         eleEmail.clear();
         eleEmail.sendKeys(email);
 
-        waitForElementToBeClickable(driver, id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_2__Value"), 10000);
-        WebElement elePhone = driver.findElement(id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_2__Value"));
+        waitForElementToBeClickable(driver, id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_7265355b-26ba-437c-84d4-377aa359ffdc__Value"), 10000);
+        WebElement elePhone = driver.findElement(id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_7265355b-26ba-437c-84d4-377aa359ffdc__Value"));
         elePhone.click();
         elePhone.clear();
         elePhone.sendKeys(phone);
 
-        waitForElementToBeClickable(driver, id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_6__Value"), 10000);
-        WebElement eleEnqDetails = driver.findElement(id("wffm7bcebacf323c4981a33eab005b609b0f_Sections_0__Fields_6__Value"));
+        waitForElementToBeClickable(driver, id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_813848c4-d335-4fcc-9a99-d9b2e344237e__Value"), 10000);
+        WebElement eleEnqDetails = driver.findElement(id("fxb_7bcebacf-323c-4981-a33e-ab005b609b0f_Fields_813848c4-d335-4fcc-9a99-d9b2e344237e__Value"));
         eleEnqDetails.click();
         eleEnqDetails.clear();
         eleEnqDetails.sendKeys(enquiryDetails);
