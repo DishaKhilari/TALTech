@@ -5,8 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import starter.startBrowser.Baseclass;
 
-import static org.openqa.selenium.By.cssSelector;
-import static org.openqa.selenium.By.id;
+import static org.openqa.selenium.By.*;
 
 public class ContactUs extends Baseclass {
 
@@ -63,7 +62,7 @@ public class ContactUs extends Baseclass {
 //        Baseclass.SwitchFrame(3);
 //        driver.findElement(By.cssSelector(".recaptcha-checkbox-border")).click();
         Baseclass.DefaultContent();
-        waitForElementToBeClickable(driver, cssSelector(".btn"), 10000);
-        driver.findElement(cssSelector(".btn")).click();
+        waitForElementToBeClickable(driver, className("fxb.7bcebacf-323c-4981-a33e-ab005b609b0f.383899df-fac9-48c5-88cb-5e65a71bd578"), 10000);
+        driver.findElement(className("fxb.7bcebacf-323c-4981-a33e-ab005b609b0f.383899df-fac9-48c5-88cb-5e65a71bd578")).click();
     }
 }
