@@ -1,5 +1,6 @@
 package starter.stepdefinitions;
 
+import io.cucumber.core.gherkin.Feature;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,10 +20,10 @@ public class MainPage extends Baseclass {
     ContactUs contactUs = new ContactUs();
 
 
-//    @Given("Enter URL")
-//    public void setUp(String URL) throws InterruptedException {
-//        rundriver.setUp(URL);
-//    }
+    @Given("Enter URL")
+    public void setUp(String URL) throws InterruptedException {
+        rundriver.setUp(URL);
+    }
 
     @When("I click on Insurance and select Life Insurance")
     public void i_click_on_insurance_and_select_life_insurance() {
@@ -58,6 +59,7 @@ public class MainPage extends Baseclass {
     public void close_the_browser() throws IOException, InterruptedException {
         Thread.sleep(2000);
         Baseclass.screenShot("Result"); //will take screen shot of your last step
+
         Baseclass.Close();
     }
 

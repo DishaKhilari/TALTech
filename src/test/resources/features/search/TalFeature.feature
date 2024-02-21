@@ -23,5 +23,7 @@ Feature: Searching for a Life Insurance Product
       And entered all details '<Name>' '<Email>' '<Phone>' and send '<Your enquiry>'
       And close the browser
       Examples:
-        | URL                     | Label                  | Name  | Email                  | Phone      | Your enquiry           |
-        | https://www.tal.com.au/ | Make a general enquiry | disha | dish.khila@yopmail.com | 0413000000 | Make a general enquiry |
+        | URL                     | Label                  | Name   | Email                  | Phone      | Your enquiry           |
+        | https://www.tal.com.au/ | Make a general enquiry | disha  | dish.khila@yopmail.com | 0413000000 | Make a general enquiry |
+        | https://www.tal.com.au/ | Make a general enquiry | disha1 | dish.khila@yopmail.com | 0413000001 | Make a general enquiry |
+

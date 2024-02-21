@@ -9,6 +9,6 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         publish = true,
         features = {"src/test/resources/features/search/TalFeature.feature"},
-        tags = "@RegressionTest"
+        tags = "@ContactUs"
 )
-public class CucumberTestSuite {}
+public class CucumberTest {}
