@@ -10,7 +10,9 @@ import static org.openqa.selenium.By.*;
 public class ContactUs extends Baseclass {
 
     public void clickedOnContactUs(){
+        waitForElementToBePresent(driver, cssSelector(".logo > img"), 10000);
         driver.findElement(cssSelector(".logo > img")).click();
+        waitForElementToBePresent(driver, xpath("//*[text()='Contact us']"), 10000);
         driver.findElement(By.xpath("//*[text()='Contact us']")).click();
     }
 
