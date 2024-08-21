@@ -38,7 +38,7 @@ jobs:
     needs: build
     steps:
       - name: Run unit tests Build and test
-        run: mvn test -Dwebdriver.gecko.driver=/usr/local/bin/geckodriver
+        run: mvn install:install-file "-DgroupId=org.mozilla"
         working-directory: .
 
   deploy:
