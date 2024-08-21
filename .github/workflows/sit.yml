@@ -31,7 +31,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
-        working-directory: ./Tech_JavaProject
+        working-directory: .
 
   test:
     runs-on: ubuntu-latest
