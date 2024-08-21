@@ -39,8 +39,6 @@ jobs:
     steps:
       - name: Run unit tests Build and test
         run: mvn test -Dwebdriver.gecko.driver= geckodriver
-        working-directory: .
-
 
   deploy:
     runs-on: ubuntu-latest
