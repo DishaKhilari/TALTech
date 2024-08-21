@@ -1,9 +1,12 @@
-name: CI
+name: SIT Deployment
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'src/**'
+      - '.github/workflows/sit.yml'
 
 jobs:
   build:
@@ -26,5 +29,18 @@ jobs:
           chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
 
-      - name: Build and test
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Run unit tests Build and test
         run: mvn test -Dwebdriver.gecko.driver=/usr/local/bin/geckodriver
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Deploy to SIT
+        run: |
+          echo "Deploying to SIT environment"
+          
