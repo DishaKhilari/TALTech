@@ -29,12 +29,18 @@ jobs:
           chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
 
+      - name: Build with Maven
+        run: mvn clean install
+        working-directory: ./pom.xml
+
   test:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Run unit tests Build and test
         run: mvn test -Dwebdriver.gecko.driver=/usr/local/bin/geckodriver
+        working-directory: ./pom.xml
+
 
   deploy:
     runs-on: ubuntu-latest
