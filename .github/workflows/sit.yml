@@ -49,4 +49,5 @@ jobs:
       - name: Deploy to SIT
         run: |
           echo "Deploying to SIT environment"
+        working-directory: .
           
